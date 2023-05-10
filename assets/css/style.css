@@ -486,15 +486,13 @@ h6 {
     top: 50px;
   }
 
-  @media screen and (max-width: 768px) {
-    #tagline {
-      display: none;
-    }
-
+  @media screen and (max-width: 920px) {
     #logo{
-      width: 60%;
-      position: absolute;
-      left: 10px;
+      width: 50%;
+      margin-top: 5%;
+    }
+    #tagline{
+      display: none;
     }
   }
 
