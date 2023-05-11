@@ -588,6 +588,41 @@ section {
   content: "/";
 }
 
+@media (max-width: 500px){
+  #hero #btn{
+    margin-top: 500px;
+    position: absolute;
+    left: -15vw;
+  }
+}
+
+@media (min-width:520px) and (max-width: 900px){
+  #hero #btn{
+    margin-top: 350px;
+    position: absolute;
+    left: -10vw;
+  }
+}
+
+@media (min-width:901px){
+  #mobile-QuickNav{
+    display: none;
+  }
+}
+
+@media (min-width:910px) and (max-width: 1366px){
+  #hero #btn{
+    margin-top: 70px;
+    position: absolute;
+    left: -3vw;
+  }
+
+  #hero #tagline{
+    position: absolute;
+    left: -4%;
+  }
+}
+
 @media (max-width: 991px) {
   .breadcrumbs {
     margin-top: 90px;
