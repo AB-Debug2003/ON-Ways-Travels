@@ -486,13 +486,19 @@ h6 {
     top: 50px;
   }
 
-  @media screen and (max-width: 920px) {
-    #logo{
-      width: 50%;
-      margin-top: 5%;
+  @media (max-width: 920px) {
+    #logo img{
+      width: 90%;
+      margin-top: 9vw;
+      margin-left: -14vw;
     }
+
     #tagline{
-      display: none;
+      font-size: 2px;
+      top: 40vw;
+      left: -11vw;
+      margin-right: 10vw;
+
     }
   }
 
@@ -588,12 +594,27 @@ section {
   content: "/";
 }
 
-@media (max-width: 500px){
+@media (max-width:500px){
   #hero #btn{
-    margin-top: 500px;
     position: absolute;
-    left: -15vw;
+    top: 150vw;
+    left: -19vw;
   }
+}
+
+@media ((min-width:510px) and (max-width:920px)){
+  #tagline{
+    font-size: 3px;
+    top: 35vw;
+  }
+
+  #btn{
+    top: 90vw;
+  }
+}
+
+video::-webkit-media-controls {
+  display: none;
 }
 
 #footer h3 span{
