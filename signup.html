@@ -32,10 +32,24 @@
 				<ul>
 					<li><a href="home.html">Home</a></li>
 					<li><a href="about.html">About Us</a></li>
-					<li><a href="services.html">Services</a></li>
+
+					<li class="dropdown"><a href="services.html"><span>Services</span> <i
+								class="bi bi-chevron-down"></i></a>
+						<ul>
+							<li><a href="services.html">Packages</a></li>
+							<li><a href="about.html">Destinations</a></li>
+						</ul>
+					</li>
+
 					<li><a href="pricing.html">Pricing</a></li>
 					<li><a href="contact.html">Contact</a></li>
-					<li><a href="login.html" class="active">LogIn</a></li>
+					<li class="dropdown"><a href="login.html" class="active"><span>Member</span> <i
+								class="bi bi-chevron-down"></i></a>
+						<ul>
+							<li><a href="login.html">Login</a></li>
+							<li><a href="signup.html" class="active">Sign Up</a></li>
+						</ul>
+					</li>
 				</ul>
 
 				<i class="bi bi-list mobile-nav-toggle"></i>
@@ -50,6 +64,7 @@
 
 		</div>
 	</header>
+
 
 	<div class="limiter">
 		<div class="container-login100">
@@ -80,7 +95,8 @@
 					<div class="form-check" data-validate="Check To Continue">
 						<input class="form-check-input" type="checkbox" value="" id="flexCheck" required>
 						<label class="form-check-label" for="flexCheck">
-							I confirm that I am willing to share my information under <a class="link-danger text-decoration-underline" href="privacy.html">Fair
+							I confirm that I am willing to share my information under <a
+								class="link-danger text-decoration-underline" href="privacy.html">Fair
 								Use Policy</a>
 						</label>
 					</div>

@@ -619,6 +619,26 @@ video::-webkit-media-controls {
   }
 }
 
+@media (min-width:1000px) and (max-width:2000px){
+  .breadcrumbs{
+    display: none;
+  }
+
+  #about-us{
+    padding-top: 10vw;
+  }
+}
+
+.title{
+  color: #1fe940;
+}
+
+@media (max-width:480px){
+  #open-p p{
+    font-size: 15px;
+  }
+}
+
 @media (max-width: 991px) {
   .breadcrumbs {
     margin-top: 90px;
