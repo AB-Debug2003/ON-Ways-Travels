@@ -139,7 +139,7 @@ h6 {
   justify-content: space-between;
   padding: 10px 0 10px 30px;
   font-family: "Roboto", sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
   color: #111;
   white-space: nowrap;
@@ -159,6 +159,107 @@ h6 {
 .navbar .active:focus,
 .navbar li:hover>a {
   color: #1bbd36;
+}
+
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 14px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+  border-top: 2px solid #1bbd36;
+}
+
+.navbar .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: none;
+  color: #111;
+}
+
+.navbar .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover>a {
+  color: #1bbd36;
+}
+
+.navbar .dropdown:hover>ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+
+.navbar .dropdown .dropdown:hover>ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+
+@media (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+
+  .navbar .dropdown .dropdown:hover>ul {
+    left: -100%;
+  }
+}
+
+.navbar-mobile .dropdown ul {
+  position: static;
+  display: none;
+  margin: 10px 20px;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 1;
+  visibility: visible;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+
+.navbar-mobile .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar-mobile .dropdown ul a {
+  padding: 10px 20px;
+}
+
+.navbar-mobile .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar-mobile .dropdown ul a:hover,
+.navbar-mobile .dropdown ul .active:hover,
+.navbar-mobile .dropdown ul li:hover>a {
+  color: #1bbd36;
+}
+
+.navbar-mobile .dropdown>.dropdown-active {
+  display: block;
 }
 
 .mobile-nav-toggle {
@@ -357,13 +458,13 @@ h6 {
   }
 
   @media (max-width: 920px) {
-    #logo img{
+    #logo img {
       width: 90%;
       margin-top: 9vw;
       margin-left: -14vw;
     }
 
-    #tagline{
+    #tagline {
       font-size: 2px;
       top: 40vw;
       left: -11vw;
@@ -464,21 +565,21 @@ section {
   content: "/";
 }
 
-@media (max-width:500px){
-  #hero #btn{
+@media (max-width:500px) {
+  #hero #btn {
     position: absolute;
     top: 150vw;
     left: -19vw;
   }
 }
 
-@media ((min-width:510px) and (max-width:920px)){
-  #tagline{
+@media ((min-width:510px) and (max-width:920px)) {
+  #tagline {
     font-size: 3px;
     top: 35vw;
   }
 
-  #btn{
+  #btn {
     top: 90vw;
   }
 }
@@ -487,32 +588,32 @@ video::-webkit-media-controls {
   display: none;
 }
 
-#footer h3 span{
+#footer h3 span {
   color: #1bbd36;
 }
 
-@media (min-width:520px) and (max-width: 900px){
-  #hero #btn{
+@media (min-width:520px) and (max-width: 900px) {
+  #hero #btn {
     margin-top: 350px;
     position: absolute;
     left: -10vw;
   }
 }
 
-@media (min-width:901px){
-  #mobile-QuickNav{
+@media (min-width:901px) {
+  #mobile-QuickNav {
     display: none;
   }
 }
 
-@media (min-width:910px) and (max-width: 1366px){
-  #hero #btn{
+@media (min-width:910px) and (max-width: 1366px) {
+  #hero #btn {
     margin-top: 70px;
     position: absolute;
     left: -3vw;
   }
 
-  #hero #tagline{
+  #hero #tagline {
     position: absolute;
     left: -4%;
   }
@@ -630,6 +731,13 @@ video::-webkit-media-controls {
 
 .features .icon-box h3 a:hover {
   color: #1bbd36;
+}
+
+@media (max-width:510px) {
+  #services .container .col {
+    margin-left: 19px;
+    padding-bottom: 5%;
+  }
 }
 
 .pricing .box {
