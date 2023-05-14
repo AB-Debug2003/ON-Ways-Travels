@@ -927,12 +927,7 @@ video::-webkit-media-controls {
 }
 
 .contact .info-wrap {
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 30px;
-}
-
-.contact .info {
-  background: #fff;
 }
 
 .contact .info i {
@@ -954,14 +949,14 @@ video::-webkit-media-controls {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #111;
+  color: #fffefe;
 }
 
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #444444;
+  color: #ffffff;
 }
 
 .contact .info:hover i {
@@ -971,9 +966,7 @@ video::-webkit-media-controls {
 
 .contact .form {
   width: 100%;
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
   padding: 30px;
-  background: #fff;
 }
 
 .contact .form .form-group {
