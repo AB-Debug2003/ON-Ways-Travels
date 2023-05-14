@@ -926,6 +926,12 @@ video::-webkit-media-controls {
   padding: 0;
 }
 
+.contact{
+  background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)),url('/media/contact.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .contact .info-wrap {
   padding: 30px;
 }
@@ -1203,4 +1209,15 @@ video::-webkit-media-controls {
     padding-left: 1.5rem;
     padding-bottom: 2rem;
   }
+}
+
+#insurance{
+  color: #ffff;
+  background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)),url('/media/insurance.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#insurance i{
+  color: #1bbd36;
 }
