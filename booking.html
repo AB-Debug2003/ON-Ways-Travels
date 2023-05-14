@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Book Now - Onways Travels</title>
+    <link href="media/favicon.png" rel="icon">
+
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400" rel="stylesheet">
+
+    <link href="assets/css/booking.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center">
+
+            <h1 class="logo me-auto"><a href="home.html"><span>OnWays</span> Travels</a></h1>
+
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+
+                    <li class="dropdown"><a href="packages.html"><span>Services</span>
+                            <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="packages.html">Packages</a></li>
+                            <li><a href="about.html">Destinations</a></li>
+                            <li><a href="insurance.html">Travel Insurance</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="booking.html" class="active">Book Now</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="dropdown"><a href="login.html"><span>Member</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="signup.html">Sign Up</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+
+            <div class="header-social-links d-flex">
+                <a href="#" class="twitter"><i class="bu bi-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bu bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bu bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bu bi-linkedin"></i></i></a>
+            </div>
+
+        </div>
+    </header>
+
+    <main id="main">
+        <section id="breadcrumbs" class="breadcrumbs">
+            <div class="container">
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2>Services</h2>
+                    <ol id="mobile-QuickNav">
+                        <li><a href="home.html">Home</a></li>
+                        <li>Services</li>
+                        <li>Packages</li>
+                    </ol>
+                </div>
+
+            </div>
+        </section>
+        <section style="background-image: url('/media/background.jpg');background-size: cover;
+        background-position: center;">
+            <div id="booking" class="section">
+                <div class="section-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="booking-form">
+                                <h1 class="bi-bootstrap-fill">
+                                    ook A Tour Now!
+                                </h1>
+                                <form>
+                                    <div class="form-group">
+                                        <div class="form-checkbox">
+                                            <label for="roundtrip">
+                                                <input type="radio" id="roundtrip" name="flight-type">
+                                                <span></span>Roundtrip
+                                            </label>
+                                            <label for="one-way">
+                                                <input type="radio" id="one-way" name="flight-type">
+                                                <span></span>One way
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <span class="form-label">Name</span>
+                                                <input class="form-control" type="text" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <span class="form-label">Email</span>
+                                                <input class="form-control" type="email" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <span class="form-label">Source</span>
+                                                <select class="form-control">
+                                                    <option>Lahore, Pakistan</option>
+                                                    <option>Karachi, Pakistan</option>
+                                                    <option>Islamabad, Pakistan</option>
+                                                    <option>Qatar</option>
+                                                    <option>Dubai</option>
+                                                    <option>London</option>
+                                                    <option>USA</option>
+                                                    <option>Baku</option>
+                                                </select>
+                                                <span class="select-arrow" id="arrow"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <span class="form-label">Destination</span>
+                                                <select class="form-control">
+                                                    <option>Lahore, Pakistan</option>
+                                                    <option>Karachi, Pakistan</option>
+                                                    <option>Islamabad, Pakistan</option>
+                                                    <option>Qatar</option>
+                                                    <option selected>Dubai</option>
+                                                    <option>London</option>
+                                                    <option>USA</option>
+                                                    <option>Baku</option>
+                                                </select>
+                                                <span class="select-arrow" id="arrow"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row row-cols-2">
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <span class="form-label">Departure Date</span>
+                                                <input class="form-control" type="date" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <span class="form-label">Return Date</span>
+                                                <input class="form-control" type="date" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <span class="form-label">Adults</span>
+                                                <select class="form-control">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                </select>
+                                                <span class="select-arrow" id="arrow"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <span class="form-label">Children (0-17)</span>
+                                                <select class="form-control">
+                                                    <option>0</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                </select>
+                                                <span class="select-arrow" id="arrow"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <span class="form-label">Travel class</span>
+                                                <select class="form-control">
+                                                    <option>Economy class</option>
+                                                    <option>Business class</option>
+                                                    <option>Luxury class</option>
+                                                </select>
+                                                <span class="select-arrow" id="arrow"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-btn">
+                                                <button class="submit-btn">Book Now</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3><span><strong>Onways</strong></span> Travels</h3>
+                        <p>
+                            63-H DHA Phase 6 <br>
+                            Lahore<br>
+                            Pakistan <br><br>
+                            <strong>Phone:</strong> +92 0900 786 01 <br>
+                            <strong>Email:</strong> onways.travel@tours.com<br>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="home.html">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="packages.html">Services</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="privacy.html">Privacy policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-newsletter">
+                        <h4>Join Our Newsletter</h4>
+                        <form action="" method="post">
+                            <input type="email" name="email"><input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container d-md-flex py-4">
+
+            <div class="me-md-auto text-center text-md-start">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>Onways Travels</span></strong>. All Rights Reserved
+                </div>
+                <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                    <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                    <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                </div>
+            </div>
+    </footer>
+</body>
+
+</html>
