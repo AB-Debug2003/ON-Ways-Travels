@@ -19,13 +19,13 @@ $result = mysqli_query($conn, $sql);
 if (mysqli_num_rows($result) == 1) {
 	echo "<script>
 			alert('Login Successful!');
-			</script>";
-	header("Location: home.html");			  
+            window.location.href = 'home.html';
+			</script>";	  
 } 
 else {
 	echo "<script>
 			alert('Login Failed. Please check your credentials.');
+            window.location.href = 'login.html';
 			</script>";
-	header("Location: login.php");
 }
 ?>

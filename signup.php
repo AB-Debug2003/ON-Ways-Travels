@@ -4,34 +4,29 @@ $username = "root";
 $password = "";
 $database = "onways";
 
-$conn = mysqli_connect($host,$username,$password,$database);
+$conn = mysqli_connect($host, $username, $password, $database);
 
-if(!$conn){
+if (!$conn) {
     die("Connection Failed: " . mysqli_connect_error());
 }
-
-echo "Connected Successfully";
 
 $email = $_REQUEST['email'];
 $username = $_REQUEST['username'];
 $password = $_REQUEST['password'];
 
-$sql = "INSERT INTO member(email,username,password) VALUES ('$email', '$username', '$password')";
+$sql = "INSERT INTO member (email, username, password) VALUES ('$email', '$username', '$password')";
 
 if (mysqli_query($conn, $sql)) {
     ob_end_flush();
     echo "<script>
-            alert('Signup Successfull!')
-          </script>";
-
-    header("Location: signup.html");
-}
-
-else{
+        alert('Signup Successful!');
+        window.location.href = 'signup.html';
+        </script>";
+} else {
     ob_end_flush();
     echo "<script>
-            alert('Oops! Signup Failed')
-          </script>";
-    
-    header("Location: ONWaysTravels/signup.html");
+        alert('Oops! Signup Failed');
+        window.location.href = 'signup.html';
+        </script>";
 }
+?>
