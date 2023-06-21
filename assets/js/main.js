@@ -1,4 +1,4 @@
-(function() {
+(function () {
   "use strict";
 
   /**
@@ -53,7 +53,7 @@
   /**
    * Mobile nav toggle
    */
-  on('click', '.mobile-nav-toggle', function(e) {
+  on('click', '.mobile-nav-toggle', function (e) {
     select('#navbar').classList.toggle('navbar-mobile')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
@@ -62,7 +62,7 @@
   /**
    * Mobile nav dropdowns activate
    */
-  on('click', '.navbar .dropdown > a', function(e) {
+  on('click', '.navbar .dropdown > a', function (e) {
     if (select('#navbar').classList.contains('navbar-mobile')) {
       e.preventDefault()
       this.nextElementSibling.classList.toggle('dropdown-active')
@@ -77,7 +77,7 @@
 
   heroCarouselItems.forEach((item, index) => {
     (index === 0) ?
-    heroCarouselIndicators.innerHTML += "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "' class='active'></li>":
+      heroCarouselIndicators.innerHTML += "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "' class='active'></li>" :
       heroCarouselIndicators.innerHTML += "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "'></li>"
   });
 
@@ -89,7 +89,7 @@
     new Waypoint({
       element: skilsContent,
       offset: '80%',
-      handler: function(direction) {
+      handler: function (direction) {
         let progress = select('.progress .progress-bar', true);
         progress.forEach((el) => {
           el.style.width = el.getAttribute('aria-valuenow') + '%'
@@ -112,26 +112,49 @@
 
 })()
 
-document.addEventListener("DOMContentLoaded", function () {  
+document.addEventListener("DOMContentLoaded", function () {
   adultSlider.addEventListener("input", function () {
     adultInput.value = adultSlider.value;
   });
-  
+
   adultInput.addEventListener("input", function () {
     adultSlider.value = adultInput.value;
   });
-  
+
   childInput.addEventListener("input", function () {
     childSlider.value = childInput.value;
   });
-  
+
   childSlider.addEventListener("input", function () {
     childInput.value = childSlider.value;
   });
 });
 
 function validateBooking() {
-  let roundTrip = document.getElementById("roundtrip");
-  let oneWay = document.getElementById("one-way");
+  var name = document.getElementById("name")
+  var email = document.getElementById("email")
+  var depDate = new Date(document.getElementById("depDate").value);
+  var retDate = new Date(document.getElementById("retDate").value);
+  var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  var timeDiff = Math.abs(retDate.getTime() - depDate.getTime());
+  var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
 
+  if (name.value === "") {
+    alert("Error! Enter a Valid Name.")
+    return false;
+  }
+  
+  if (email.value === "" || !(emailPattern.test(email.value))) {
+    alert("Error! Enter a valid email");
+    return false;
+  }
+  
+  if (diffDays < 7) {
+    alert("Incorrect Return Date! Your trip must be of more than 7 days.")
+    return false;
+  }
+
+  else{
+    return true;
+  }
 }

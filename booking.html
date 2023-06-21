@@ -89,18 +89,6 @@
                                     ook A Tour Now!
                                 </h1>
                                 <form>
-                                    <div class="form-group">
-                                        <div class="form-checkbox">
-                                            <label for="roundtrip">
-                                                <input type="radio" id="roundtrip" name="flight-type">
-                                                <span></span>Roundtrip
-                                            </label>
-                                            <label for="one-way">
-                                                <input type="radio" id="one-way" name="flight-type">
-                                                <span></span>One way
-                                            </label>
-                                        </div>
-                                    </div>
                                     <div class="row pt-3">
                                         <div class="col-md-6">
                                             <div class="form-group">
@@ -198,9 +186,7 @@
                                     </div>
                                     <div class="row pt-3 justify-content-center">
                                         <div class="col-md-3">
-                                            <div class="form-btn">
-                                                <button class="submit-btn">Book Now</button>
-                                            </div>
+                                            <button class="submit-btn" type="submit" onclick="return validateBooking()">Book Now</button>
                                         </div>
                                     </div>
                                 </form>
