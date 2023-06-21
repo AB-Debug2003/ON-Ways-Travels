@@ -19,6 +19,7 @@ $password = $_REQUEST['password'];
 $sql = "INSERT INTO member(email,username,password) VALUES ('$email', '$username', '$password')";
 
 if (mysqli_query($conn, $sql)) {
+    ob_end_flush();
     echo "<script>
             alert('Signup Successfull!')
           </script>";
@@ -27,6 +28,7 @@ if (mysqli_query($conn, $sql)) {
 }
 
 else{
+    ob_end_flush();
     echo "<script>
             alert('Oops! Signup Failed')
           </script>";
