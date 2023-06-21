@@ -111,3 +111,27 @@
   });
 
 })()
+
+document.addEventListener("DOMContentLoaded", function () {  
+  adultSlider.addEventListener("input", function () {
+    adultInput.value = adultSlider.value;
+  });
+  
+  adultInput.addEventListener("input", function () {
+    adultSlider.value = adultInput.value;
+  });
+  
+  childInput.addEventListener("input", function () {
+    childSlider.value = childInput.value;
+  });
+  
+  childSlider.addEventListener("input", function () {
+    childInput.value = childSlider.value;
+  });
+});
+
+function validateBooking() {
+  let roundTrip = document.getElementById("roundtrip");
+  let oneWay = document.getElementById("one-way");
+
+}

@@ -139,7 +139,7 @@ h6 {
   justify-content: space-between;
   padding: 10px 0 10px 30px;
   font-family: "Roboto", sans-serif;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 600;
   color: #111;
   white-space: nowrap;
@@ -399,6 +399,7 @@ h6 {
 
 #hero .btn-get-started:hover {
   background: #1bbd36;
+  transform: scale(1.2);
   color: #fff;
   text-decoration: none;
 }
@@ -1009,6 +1010,12 @@ video::-webkit-media-controls {
   border-radius: 4px;
 }
 
+.contact .form button[type=submit]:hover {
+  background: #4d4643;
+  color: #1bbd36;
+  transform: scale(1.1);
+}
+
 @keyframes animate-loading {
   0% {
     transform: rotate(0deg);
@@ -1182,6 +1189,7 @@ video::-webkit-media-controls {
 }
 
 .card{
+  transition: all 0.3s ease-in-out;
   width: 30rem;
 }
 
@@ -1219,5 +1227,15 @@ video::-webkit-media-controls {
 }
 
 #insurance i{
+  color: #1bbd36;
+}
+
+.card:hover{
+  transform: scale(1.03);
+  transition: all 0.3s ease-in-out;
+}
+
+.card .btn:hover{
+  background-color: #1e1e1e;
   color: #1bbd36;
 }

@@ -101,25 +101,25 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row pt-3">
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <span class="form-label">Name</span>
-                                                <input class="form-control" type="text" required>
+                                                <input class="form-control" type="text" required id="name">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <span class="form-label">Email</span>
-                                                <input class="form-control" type="email" required>
+                                                <input class="form-control" type="email" required id="email">
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row pt-3">
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <span class="form-label">Select a Package</span>
-                                                <select class="form-control">
+                                                <select class="form-control custom-select">
                                                     <option>Qatar</option>
                                                     <option>Dubai</option>
                                                     <option>Turkey</option>
@@ -131,7 +131,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <span class="form-label">Your Country</span>
-                                                <select class="form-control">
+                                                <select class="form-control custom-select">
                                                     <option>Lahore, Pakistan</option>
                                                     <option>Karachi, Pakistan</option>
                                                     <option>Islamabad, Pakistan</option>
@@ -145,50 +145,49 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row row-cols-2">
+                                    <div class="row pt-3">
+                                        <div class="col-5">
+                                            <span class="form-label">Adults</span>
+                                            <div class="w-100 col-lg-7">
+                                                <input type="range" id="adultSlider" step="1" class="w-100 mt-3"
+                                                    value="1" min="1" max="10">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-1 mt-2">
+                                            <input type="number" id="adultInput" class="form-control mt-3" min="1"
+                                                max="10" value="1" required>
+                                        </div>
+                                        <div class="col-5">
+                                            <span class="form-label">Childrens <span>(Age: 1-17)</span></span>
+                                            <div class="w-100 col-lg-7">
+                                                <input type="range" id="childSlider" step="1" class="w-100 mt-3"
+                                                    value="1" min="1" max="10">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-1 mt-2">
+                                            <input type="number" id="childInput" class="form-control mt-3" min="1"
+                                                max="10" value="1" required>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-3">
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <span class="form-label">Departure Date</span>
-                                                <input class="form-control" type="date" required>
+                                                <input class="form-control" type="date" required id="depDate">
                                             </div>
                                         </div>
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <span class="form-label">Return Date</span>
-                                                <input class="form-control" type="date" required>
+                                                <input class="form-control" type="date" required id="retDate">
                                             </div>
                                         </div>
-                                        <div class="col-md-2">
-                                            <div class="form-group">
-                                                <span class="form-label">Adults</span>
-                                                <select class="form-control">
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                </select>
-                                                <span class="select-arrow" id="arrow"></span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <div class="form-group">
-                                                <span class="form-label">Children (0-17)</span>
-                                                <select class="form-control">
-                                                    <option>0</option>
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                </select>
-                                                <span class="select-arrow" id="arrow"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <span class="form-label">Travel class</span>
-                                                <select class="form-control">
+                                                <select class="form-control custom-select">
                                                     <option>Economy class</option>
                                                     <option>Business class</option>
                                                     <option>Luxury class</option>
@@ -196,6 +195,8 @@
                                                 <span class="select-arrow" id="arrow"></span>
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class="row pt-3 justify-content-center">
                                         <div class="col-md-3">
                                             <div class="form-btn">
                                                 <button class="submit-btn">Book Now</button>
@@ -264,8 +265,8 @@
     </footer>
 
     <script src="assets/vendor/aos/aos.js"></script>
-	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script src="assets/js/main.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
