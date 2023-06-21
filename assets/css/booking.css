@@ -250,3 +250,22 @@ input[type=range]:hover::-webkit-slider-runnable-track {
     cursor: pointer;
     background: #1bbd36;
 }
+
+@media(max-width:510px){
+	.container .section-center{
+	  padding: 20px;
+	}
+
+	.adultSlider{
+		display: none;
+	}
+
+	.childSlider{
+		display: none;
+	}
+
+	.booking-form{
+		font-size: 10px;
+	}
+
+  }
