@@ -158,3 +158,51 @@ function validateBooking() {
     return true;
   }
 }
+
+function validateSignup() {
+  var email = document.getElementById("email")
+  var username = document.getElementById("username")
+  var password = document.getElementById("password")
+  var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  var usernamePattern = /^[a-zA-Z0-9]+$/;
+
+  if (email.value === "" || !(emailPattern.test(email.value))) {
+    alert("Error! Enter a valid email");
+    return false;
+  }
+
+  if (username.value === "" || !(usernamePattern.test(username.value))) {
+    alert("Enter a Valid Username!")
+    return false;
+  }
+
+  if (password.value === "") {
+    alert("Enter a Valid Password!")
+    return false;
+  }
+
+  else{
+    return true;
+  }
+  
+}
+
+function validateLogin() {
+  var username = document.getElementById("username")
+  var password = document.getElementById("password")
+
+  if (username.value === "" || !(usernamePattern.test(username.value))) {
+    alert("Enter a Valid Username!")
+    return false;
+  }
+
+  if (password.value === "") {
+    alert("Enter a Valid Password!")
+    return false;
+  }
+
+  else{
+    return true;
+  }
+  
+}

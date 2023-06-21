@@ -146,11 +146,6 @@ iframe {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("/media/plane.jpg");
-  background-attachment: scroll;
-  background-size: cover;
 }
 
 .wrap-login100 {

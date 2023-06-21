@@ -929,11 +929,6 @@ video::-webkit-media-controls {
   background-image: url("/contact\ -\ Copy.jpg");
 }
 
-#main img {
-  object-fit: cover;
-  opacity: 0.4;
-}
-
 .contact .info-wrap {
   padding: 30px;
 }

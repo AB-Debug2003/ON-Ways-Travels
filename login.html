@@ -7,8 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="/media/favicon.png" />
 
-	<link rel="stylesheet" href="/assets/css/util.css">
-	<link rel="stylesheet" href="/ON Ways Travels/assets/css/form.css">
+	<link rel="stylesheet" href="assets/css/form.css">
 	<link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
 	<link href="assets/vendor/aos/aos.css" rel="stylesheet">
 	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -23,7 +22,7 @@
 	<header id="header" class="fixed-top">
 		<div class="container d-flex align-items-center">
 
-			<h1 class="logo me-auto"><a href="home.html"><span>OnWays</span> Travels</a></h1>
+			<h1 class="logo me-auto"><a href="home.html" style="font-size: 28px;"><span>OnWays</span> Travels</a></h1>
 
 			<nav id="navbar" class="navbar order-last order-lg-0">
 				<ul>
@@ -63,25 +62,25 @@
 	</header>
 
 	<div class="limiter">
-		<div class="container-login100">
+		<div class="container-login100" style="background-image: url('/planebg.jpg');">
 			<div class="wrap-login100 p-5" data-aos="fade-up">
-				<form class="login100-form">
+				<form class="login100-form" method="POST" action="/ONWaysTravels/login.php">
 					<span class="login100-form-title pb-5">
 						Sign In
 					</span>
 
 					<div class="wrap-input100 mb-4" data-validate="Please enter username">
-						<input class="input100" type="text" name="username" placeholder="Username" required>
+						<input class="input100" type="text" name="username" id="username" placeholder="Username" required>
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 mb-4" data-validate="Please enter password">
-						<input class="input100" type="password" name="pass" placeholder="Password" required>
+						<input class="input100" type="password" name="password" placeholder="Password" id="password" required>
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="container-login100-form-btn mb-3">
-						<button class="login100-form-btn">
+						<button class="login100-form-btn" type="submit" onclick="return validateLogin()">
 							Sign in
 						</button>
 					</div>
