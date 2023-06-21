@@ -157,7 +157,7 @@ h6 {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover>a {
+.navbar li:hover > a {
   color: #1bbd36;
 }
 
@@ -195,11 +195,11 @@ h6 {
 
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>a {
+.navbar .dropdown ul li:hover > a {
   color: #1bbd36;
 }
 
-.navbar .dropdown:hover>ul {
+.navbar .dropdown:hover > ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
@@ -211,7 +211,7 @@ h6 {
   visibility: hidden;
 }
 
-.navbar .dropdown .dropdown:hover>ul {
+.navbar .dropdown .dropdown:hover > ul {
   opacity: 1;
   top: 0;
   left: 100%;
@@ -223,7 +223,7 @@ h6 {
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
 }
@@ -254,11 +254,11 @@ h6 {
 
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover>a {
+.navbar-mobile .dropdown ul li:hover > a {
   color: #1bbd36;
 }
 
-.navbar-mobile .dropdown>.dropdown-active {
+.navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
 
@@ -325,7 +325,7 @@ h6 {
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover>a {
+.navbar-mobile li:hover > a {
   color: #1bbd36;
 }
 
@@ -470,7 +470,6 @@ h6 {
       top: 40vw;
       left: -11vw;
       margin-right: 10vw;
-
     }
   }
 
@@ -528,7 +527,6 @@ section {
   margin-bottom: 0;
 }
 
-
 .breadcrumbs {
   padding: 15px 0;
   background: #1bbd36;
@@ -555,18 +553,18 @@ section {
   color: #fff;
 }
 
-.breadcrumbs ol li+li {
+.breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.breadcrumbs ol li+li::before {
+.breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
   color: #fff;
   content: "/";
 }
 
-@media (max-width:500px) {
+@media (max-width: 500px) {
   #hero #btn {
     position: absolute;
     top: 150vw;
@@ -574,7 +572,7 @@ section {
   }
 }
 
-@media ((min-width:510px) and (max-width:920px)) {
+@media ((min-width: 510px) and (max-width:920px)) {
   #tagline {
     font-size: 3px;
     top: 35vw;
@@ -593,7 +591,7 @@ video::-webkit-media-controls {
   color: #1bbd36;
 }
 
-@media (min-width:520px) and (max-width: 900px) {
+@media (min-width: 520px) and (max-width: 900px) {
   #hero #btn {
     margin-top: 350px;
     position: absolute;
@@ -601,13 +599,13 @@ video::-webkit-media-controls {
   }
 }
 
-@media (min-width:901px) {
+@media (min-width: 901px) {
   #mobile-QuickNav {
     display: none;
   }
 }
 
-@media (min-width:910px) and (max-width: 1366px) {
+@media (min-width: 910px) and (max-width: 1366px) {
   #hero #btn {
     margin-top: 70px;
     position: absolute;
@@ -620,22 +618,22 @@ video::-webkit-media-controls {
   }
 }
 
-@media (min-width:1000px) and (max-width:2000px){
-  .breadcrumbs{
+@media (min-width: 1000px) and (max-width: 2000px) {
+  .breadcrumbs {
     display: none;
   }
 
-  #about-us{
+  #about-us {
     padding-top: 10vw;
   }
 }
 
-.title{
+.title {
   color: #1fe940;
 }
 
-@media (max-width:480px){
-  #open-p p{
+@media (max-width: 480px) {
+  #open-p p {
     font-size: 15px;
   }
 }
@@ -754,7 +752,7 @@ video::-webkit-media-controls {
   color: #1bbd36;
 }
 
-@media (max-width:510px) {
+@media (max-width: 510px) {
   #services .container .col {
     margin-left: 19px;
     padding-bottom: 5%;
@@ -927,10 +925,13 @@ video::-webkit-media-controls {
   padding: 0;
 }
 
-.contact{
-  background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)),url('/media/contact.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
+.contact {
+  background-image: url("/contact\ -\ Copy.jpg");
+}
+
+#main img {
+  object-fit: cover;
+  opacity: 0.4;
 }
 
 .contact .info-wrap {
@@ -1001,7 +1002,7 @@ video::-webkit-media-controls {
   padding: 10px 12px;
 }
 
-.contact .form button[type=submit] {
+.contact .form button[type="submit"] {
   background: #1bbd36;
   border: 0;
   padding: 10px 24px;
@@ -1010,7 +1011,7 @@ video::-webkit-media-controls {
   border-radius: 4px;
 }
 
-.contact .form button[type=submit]:hover {
+.contact .form button[type="submit"]:hover {
   background: #4d4643;
   color: #1bbd36;
   transform: scale(1.1);
@@ -1129,13 +1130,13 @@ video::-webkit-media-controls {
   text-align: left;
 }
 
-#footer .footer-newsletter form input[type=email] {
+#footer .footer-newsletter form input[type="email"] {
   border: 0;
   padding: 4px 8px;
   width: calc(100% - 100px);
 }
 
-#footer .footer-newsletter form input[type=submit] {
+#footer .footer-newsletter form input[type="submit"] {
   position: absolute;
   top: 0;
   right: -4px;
@@ -1151,7 +1152,7 @@ video::-webkit-media-controls {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-#footer .footer-newsletter form input[type=submit]:hover {
+#footer .footer-newsletter form input[type="submit"]:hover {
   background: #2ae149;
 }
 
@@ -1182,60 +1183,62 @@ video::-webkit-media-controls {
   text-decoration: none;
 }
 
-#packages{
-  background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)),url('/media/bg-2.jpg');
+#packages {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/media/bg-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.card{
+.card {
   transition: all 0.3s ease-in-out;
   width: 30rem;
 }
 
-.card-title{
+.card-title {
   color: #1bbd36;
   font-size: 30px;
 }
 
-.card .btn{
+.card .btn {
   background-color: #1bbd36;
   border-color: #1bbd36;
 }
 
-@media(max-width:900px){
-  .card{
+@media (max-width: 900px) {
+  .card {
     width: 20rem;
   }
-  .card-title{
+  .card-title {
     font-size: 20px;
   }
 }
 
-@media(max-width:510px){
-  #packages .col{
+@media (max-width: 510px) {
+  #packages .col {
     padding-left: 1.5rem;
     padding-bottom: 2rem;
   }
 }
 
-#insurance{
+#insurance {
   color: #ffff;
-  background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)),url('/media/insurance.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/media/insurance.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#insurance i{
+#insurance i {
   color: #1bbd36;
 }
 
-.card:hover{
+.card:hover {
   transform: scale(1.03);
   transition: all 0.3s ease-in-out;
 }
 
-.card .btn:hover{
+.card .btn:hover {
   background-color: #1e1e1e;
   color: #1bbd36;
 }
