@@ -10,11 +10,11 @@ $sql = "INSERT INTO member (email, username, password) VALUES ('$email', '$usern
 $sql2 = "SELECT * FROM member WHERE username = '$username' OR password = '$password'";
 $result = mysqli_query($conn, $sql2);
 
-if (mysqli_num_rows($result) == 1) {
+if (mysqli_num_rows($result) >= 1) {
     echo "<script>
             alert('User Already Exists!');
             window.location.href = 'login.html';
-            </script>";	  
+          </script>";	  
 }
 
 else {
