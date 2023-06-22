@@ -88,18 +88,18 @@
                                 <h1 class="bi-bootstrap-fill">
                                     ook A Tour Now!
                                 </h1>
-                                <form>
+                                <form method="post" action="booking.php">
                                     <div class="row pt-3">
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <span class="form-label">Name</span>
-                                                <input class="form-control" type="text" required id="name">
+                                                <input class="form-control" type="text" name="name" required id="name">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <span class="form-label">Email</span>
-                                                <input class="form-control" type="email" required id="email">
+                                                <input class="form-control" type="email" name="email" required id="email">
                                             </div>
                                         </div>
                                     </div>
@@ -107,7 +107,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <span class="form-label">Select a Package</span>
-                                                <select class="form-control custom-select">
+                                                <select class="form-control custom-select" name="package">
                                                     <option>Qatar</option>
                                                     <option>Dubai</option>
                                                     <option>Turkey</option>
@@ -119,7 +119,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <span class="form-label">Your Country</span>
-                                                <select class="form-control custom-select">
+                                                <select class="form-control custom-select" name="country">
                                                     <option>Lahore, Pakistan</option>
                                                     <option>Karachi, Pakistan</option>
                                                     <option>Islamabad, Pakistan</option>
@@ -143,7 +143,7 @@
                                         </div>
 
                                         <div class="col-lg-1 col-sm-1 mt-2">
-                                            <input type="number" id="adultInput" class="form-control mt-3" min="1"
+                                            <input type="number" id="adultInput" name="adult" class="form-control mt-3" min="1"
                                                 max="10" value="1" required>
                                         </div>
                                         <div class="col-lg-5 childSlider">
@@ -155,7 +155,7 @@
                                         </div>
 
                                         <div class="col-lg-1 mt-2">
-                                            <input type="number" id="childInput" class="form-control mt-3" min="1"
+                                            <input type="number" id="childInput" name="child" class="form-control mt-3" min="1"
                                                 max="10" value="1" required>
                                         </div>
                                     </div>
@@ -163,19 +163,19 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <span class="form-label">Departure Date</span>
-                                                <input class="form-control" type="date" required id="depDate">
+                                                <input class="form-control" type="date" name="depDate" required id="depDate">
                                             </div>
                                         </div>
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <span class="form-label">Return Date</span>
-                                                <input class="form-control" type="date" required id="retDate">
+                                                <input class="form-control" type="date" name="retDate" required id="retDate">
                                             </div>
                                         </div>
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <span class="form-label">Travel class</span>
-                                                <select class="form-control custom-select">
+                                                <select class="form-control custom-select" name="travelClass">
                                                     <option>Economy class</option>
                                                     <option>Business class</option>
                                                     <option>Luxury class</option>
