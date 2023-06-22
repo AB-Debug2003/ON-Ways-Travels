@@ -1233,3 +1233,7 @@ video::-webkit-media-controls {
   background-color: #1e1e1e;
   color: #1bbd36;
 }
+
+tr{
+  color: #1ed33c;
+}

@@ -39,7 +39,14 @@
                         </ul>
                     </li>
 
-                    <li><a href="booking.html" class="active">Book Now</a></li>
+                    <li class="dropdown"><a href="booking.html"><span>Booking</span> <i
+                                class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="booking.html" class="active">Book Now</a></li>
+                            <li><a href="checkBooking.html">Check Booking</a></li>
+                        </ul>
+                    </li>
+
                     <li><a href="contact.html">Contact</a></li>
                     <li class="dropdown"><a href="login.html"><span>Member</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
@@ -99,7 +106,8 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <span class="form-label">Email</span>
-                                                <input class="form-control" type="email" name="email" required id="email">
+                                                <input class="form-control" type="email" name="email" required
+                                                    id="email">
                                             </div>
                                         </div>
                                     </div>
@@ -143,8 +151,8 @@
                                         </div>
 
                                         <div class="col-lg-1 col-sm-1 mt-2">
-                                            <input type="number" id="adultInput" name="adult" class="form-control mt-3" min="1"
-                                                max="10" value="1" required>
+                                            <input type="number" id="adultInput" name="adult" class="form-control mt-3"
+                                                min="1" max="10" value="1" required>
                                         </div>
                                         <div class="col-lg-5 childSlider">
                                             <span class="form-label">Childrens <span>(Age: 1-17)</span></span>
@@ -155,21 +163,23 @@
                                         </div>
 
                                         <div class="col-lg-1 mt-2">
-                                            <input type="number" id="childInput" name="child" class="form-control mt-3" min="1"
-                                                max="10" value="1" required>
+                                            <input type="number" id="childInput" name="child" class="form-control mt-3"
+                                                min="1" max="10" value="1" required>
                                         </div>
                                     </div>
                                     <div class="row pt-3">
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <span class="form-label">Departure Date</span>
-                                                <input class="form-control" type="date" name="depDate" required id="depDate">
+                                                <input class="form-control" type="date" name="depDate" required
+                                                    id="depDate">
                                             </div>
                                         </div>
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <span class="form-label">Return Date</span>
-                                                <input class="form-control" type="date" name="retDate" required id="retDate">
+                                                <input class="form-control" type="date" name="retDate" required
+                                                    id="retDate">
                                             </div>
                                         </div>
                                         <div class="col-md-3">
@@ -186,7 +196,8 @@
                                     </div>
                                     <div class="row pt-3 justify-content-center">
                                         <div class="col-md-3">
-                                            <button class="submit-btn" type="submit" onclick="return validateBooking()">Book Now</button>
+                                            <button class="submit-btn" type="submit"
+                                                onclick="return validateBooking()">Book Now</button>
                                         </div>
                                     </div>
                                 </form>
