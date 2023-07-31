@@ -10,7 +10,7 @@ $result = mysqli_query($conn, $sql);
 if (mysqli_num_rows($result) == 1) {
 	echo "<script>
 			alert('Login Successful!');
-            window.location.href = 'home.html';
+            window.location.href = 'index.html';
 			</script>";	  
 } 
 else {
